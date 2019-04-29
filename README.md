@@ -27,7 +27,7 @@ Since the release of ES6, javascript has become a more powerful, mature language
  ```
 
 ## Spread Operator — Ability to spread objects and arrays
-```
+```javascript
  function add(a, b, c) {
     return a + b + c;
  }
@@ -40,7 +40,7 @@ Since the release of ES6, javascript has become a more powerful, mature language
 ```
 
 ## Destructuring Arrays
-```
+```javascript
   // Destructuring and array, we use the rest operator
  const [first, second, ...rest] = [5, 10, 15, 20, 25];
  // Here we use three dots to spread the array to the console.log function with the spread operator
@@ -59,7 +59,7 @@ Since the release of ES6, javascript has become a more powerful, mature language
 ```
 ## Destructuring Objects
 
-```
+```javascript
   // Would rather have our variable named first even though object has key as givenName
  const { last, givenName: first, favLanguage } = {
    last: "Ferretti",
@@ -73,7 +73,7 @@ Since the release of ES6, javascript has become a more powerful, mature language
  //output : Steven Ferretti loves JS
 ```
 ## Arrow Functions — No binding of “this”
-```
+```javascript
  const strings = ["Fat", "Arrow", "Functions"];
 
  strings.map(function(element) {
@@ -91,7 +91,7 @@ Since the release of ES6, javascript has become a more powerful, mature language
 
 ## Classes
 
-```
+```javascript
  class Animal {
    constructor(name) {
      this.name = name;
@@ -137,7 +137,7 @@ Since the release of ES6, javascript has become a more powerful, mature language
 ```
 
 ## Iterators
-```
+```javascript
  let teams = {
    allTeams: {  college: ['UCF', 'FSU', 'UF'],  professional: ['Patriots', 'Jets']},
    [Symbol.iterator]() {
@@ -180,7 +180,7 @@ console.log(...teams); //UCF FSU UF Patriots Jets
 ```
 
 ## Decorators
-```
+```javascript
  function catchErrors(target, key, descriptor) {
    const originalFunction = descriptor.value.bind(target);
    descriptor.value = function(...args) {
