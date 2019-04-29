@@ -4,7 +4,7 @@ Simple Examples Of The Most Usable Modern Javascript Features
 Since the release of ES6, javascript has become a more powerful, mature language. I wanted to write a quick code overview of some of my favorite features of ES6+. A lot of times code is over explained for engineers and I designed this to be purely examples.
 
 ## Let and Const — Block Scoped Variables
- ```
+ ```javascript
   /*Immutable - Available to entire script
   Not hoisted so needs to be on top of when being used*/
    const values = [1, 2, 3, 4, 5, 6, 7];
