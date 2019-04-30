@@ -115,7 +115,7 @@ Since the release of ES6, javascript has become a more powerful, mature language
  sparky.speak(); // Sparky barks.
 ```
 ## Async Await
-```
+```javascript
  function waitAndAddTen(x) {
    return new Promise(resolve => {
      setTimeout(() => {
@@ -161,7 +161,7 @@ console.log(...teams); //UCF FSU UF Patriots Jets
 ```
 
 ## Generators
-```
+```javascript
  function * fibonacci(seed1, seed2) {
    while (true) {
      yield (() => {
